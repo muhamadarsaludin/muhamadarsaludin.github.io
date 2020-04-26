@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #3C4043;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.container {
+    padding: 0px 75px;
+    display: flex;
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-border {
+    background-color: #ffffff;
+    border: 1px solid #5AE295;
+    color: #5AE295;
+}
+
+.btn-border:hover {
+    background-color: #5AE295;
+    border: 1px solid #5AE295;
+    color: #ffffff;
+    transition: .5s ease-out;
+}
+
+.text-green {
+    color: #5AE295;
+}
+
+.bg-green {
+    background-color: #5AE295;
+    color: #ffffff;
+}
+
+
+.card {
+    border-radius: 10px;
+}
+
+#hero1,
+#hero2,
+#kejadian,
+#info {
+    margin-bottom: 8%;
+}
+
+
+
+/* navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+    top: 0;
+}
+
+
+#nav {
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #3C4043;
+    text-decoration: none;
+}
+
+nav ul li a:hover::after {
+    content: '';
+    display: block;
+    box-shadow: 0 4px 0 0 #5AE295;
+    background: transparent;
+    border-radius: 10px;
+    height: 4px;
+    width: 50%;
+    margin: 0px auto -4px;
+}
+
+/* hero */
+.hero1 {
+    margin-top: 10%;
+}
+
+.hero1,
+.hero2 {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content,
+.content-img {
+    flex: 1;
+}
+
+.content-img img {
+    width: 100%;
+}
+
+.content .kutip {
+    position: absolute;
+    top: -35%;
+    right: 0;
+    z-index: -1;
+}
+
+.content h1,
+.content p {
+    margin-bottom: 30px;
+}
+
+.kutip img {
+    transform: scale(.7);
+}
+
+
+/* angka kejadian */
+#kejadian {
+    flex-direction: column;
+}
+
+.data-covid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.data-p {
+    width: 32%;
+    border: 1px solid #5AE295;
+}
+
+.data {
+    width: 49%;
+    flex-direction: column;
+}
+
+.data-p,
+.data {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.data-value {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex: 1;
+}
+
+.data-covid.btn-center {
+    justify-content: center;
+}
+
+/* informasi */
+
+#info {
+    flex-direction: column;
+}
+
+.info-covid {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 49%;
+}
+
+.slide {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.general {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-contact,
+.info-pencegahan {
+    height: 49%;
+}
+
+.info-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    width: 49%;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.info-pencegahan {
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #5AE295;
+    background-image: url('../img/pencegahan.svg');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 50% 30%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-pencegahan h4 {
+    flex: 2;
+}
+
+.pencegahan {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: center;
+    height: 90%;
+    flex: 1;
+}
+
+small {
+    width: 19%;
+}
+
+/* Berita */
+
+
+#berita {
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.berita-video {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.screen {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.screen iframe {
+    flex: 4;
+}
+
+.screen-info {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.list-video {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.video {
+    height: 30%;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+.screen iframe {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.berita-teks {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 1px solid #631f1f; */
+    box-shadow: 4px 4px 8px rgba(204, 204, 204, .5), -4px -4px 8px rgba(204, 204, 204, .5);
+}
+
+.berita {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.berita-content {
+    flex: 3;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.berita-img {
+    flex: 1;
+    height: 170px;
+    background-image: url('../img/berita1.jpg');
+    background-size: cover;
+}
+
+.berita-covid.button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Responsive Breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width:800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 0px 50px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 0.7em;
+    }
+
+    h5 {
+        font-size: 0.6em;
+    }
+
+    nav ul {
+        width: 55%;
+    }
+
+    .content h1,
+    .content p {
+        margin-bottom: 25px;
+    }
+
+    .kutip img {
+        transform: scale(.4);
+    }
+
+
+    /* info */
+    .info-pencegahan {
+        background-position-y: 50%;
+    }
+
+    .contact p {
+        font-size: small;
+    }
+
+    .pencegahan {
+        display: none;
+    }
+
+    /* berita */
+    .berita-video {
+        flex-direction: column;
+    }
+
+    .screen {
+        width: 100%;
+
+    }
+
+    .list-video {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .video {
+        width: 32%;
+        height: 100%;
+    }
+
+}
+
+/* ukuran mobile */
+@media screen and (max-width:576px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 0px 30px;
+    }
+
+    button {
+
+        padding: 10px 15px;
+        border-radius: 100px;
+        font-weight: 500;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 0.7em;
+    }
+
+    h5 {
+        font-size: 0.6em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+
+    /* navbar */
+    nav ul {
+        display: none;
+    }
+
+    /* Hero */
+
+    .content-img img {
+        transform: scale(.7);
+    }
+
+    .kutip {
+        display: none;
+    }
+
+    .hero1 {
+        flex-direction: column-reverse;
+    }
+
+    .hero2 {
+        flex-direction: column;
+    }
+
+    /* angka kejadian */
+
+    .data-covid {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .data-p,
+    .data {
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .data-covid.button {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* info */
+    .info-covid {
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info-contact {
+        flex-direction: column;
+    }
+
+    .contact {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .info-pencegahan {
+        height: 100px;
+    }
+
+}

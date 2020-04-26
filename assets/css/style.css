@@ -1,0 +1,57 @@
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 350px;
+}
+
+.footer-company {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -2px 0px 8px rgba(0, 0, 0, .2);
+}
+
+.footer-company a {
+    color: #3C4043;
+}
+
+.footer-company ul li {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.footer-company h3 {
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    flex: 1;
+    border-top: 1px solid #cccccc;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer-img img {
+    transform: scale(1.5);
+}
+
+.footer-contact .sosmed i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.fb {
+    color: #4E71A8;
+}
+
+.tw {
+    color: #1CB7EB;
+}
+
+.ig {
+    color: #EB1C66;
+}
