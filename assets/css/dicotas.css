@@ -464,7 +464,7 @@ footer {
 }
 
 .about-text p {
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .about-logo {
@@ -534,6 +534,39 @@ footer {
     margin: 10px 0px;
 }
 
+#covid {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    flex-direction: column;
+}
+
+.covid-content {
+    margin-bottom: 50px;
+}
+
+
+.covid-content {
+    display: flex;
+}
+
+.covid-text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.covid-text h1 {
+    margin-bottom: 20px;
+}
+
+.covid-text p {
+    /* text-align: justify; */
+}
+
+.covid-logo {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
 
 
 
