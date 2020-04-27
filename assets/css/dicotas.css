@@ -7,6 +7,11 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     color: #3C4043;
     position: relative;
+    overflow-x: hidden;
+}
+
+ul li {
+    list-style: none;
 }
 
 h1,
@@ -87,7 +92,8 @@ button {
 #hero1,
 #hero2,
 #kejadian,
-#info {
+#info,
+#about {
     margin-bottom: 8%;
 }
 
@@ -392,7 +398,6 @@ footer {
 }
 
 .footer-company ul li {
-    list-style: none;
     padding: 5px 0px;
 }
 
@@ -431,6 +436,107 @@ footer {
 .ig {
     color: #EB1C66;
 }
+
+/* about page*/
+#about {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    flex-direction: column;
+}
+
+.about-content,
+.about-perinsip,
+.about-layanan {
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    text-align: justify;
+}
+
+.about-logo {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.about-logo img {
+    transform: scale(2);
+}
+
+.about-perinsip {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-perinsip h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.perinsip-dicotas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.perinsip {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+.perinsip img {
+    max-height: 250px;
+    margin-bottom: 50px;
+}
+
+.perinsip h3 {
+    margin-bottom: 10px;
+}
+
+.about-layanan {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.layanan-img {
+    width: 50%;
+}
+
+.layanan-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.layanan-content {
+    padding: 50px 0px;
+    width: 45%;
+}
+
+.layanan-content ul li {
+    margin: 10px 0px;
+}
+
+
+
+
 
 /* Responsive Breakpoint */
 
