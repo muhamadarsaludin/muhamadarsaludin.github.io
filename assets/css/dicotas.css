@@ -642,8 +642,12 @@ tr:hover {
     background-color: #ddd;
 }
 
-/* beranda berita */
-#beranda-berita {
+/* berita */
+
+
+
+/* galeri vidio */
+#galeri-video {
     margin-top: 8%;
     flex-direction: column;
     margin-bottom: 100px;
@@ -661,7 +665,7 @@ tr:hover {
 
 .serch {
     display: flex;
-    width: 100%;
+    width: 70%;
     justify-content: space-between;
     margin: 25px 0px;
 }
@@ -690,7 +694,7 @@ tr:hover {
     width: 15%;
 }
 
-.tags-berita-video {
+.tags-galeri-video {
     display: flex;
     flex-direction: column;
 }
