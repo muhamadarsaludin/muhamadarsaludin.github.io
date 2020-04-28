@@ -36,16 +36,19 @@
                     <a href="index.html" class="underline">Home</a>
                 </li>
                 <li>
-                    <a href="pages/about.html">Tentang Dicotas</a>
+                    <a href="pages/tentang.html">Tentang Dicotas</a>
                 </li>
                 <li>
-                    <a href="#">Data</a>
+                    <a href="pages/data.html">Data</a>
                 </li>
                 <li>
-                    <a href="#">Berita</a>
+                    <a href="pages/berita.html">Berita</a>
                 </li>
                 <li>
-                    <a href="#">Kontak</a>
+                    <a href="pages/galeri.html">Galeri</a>
+                </li>
+                <li>
+                    <a href="pages/kontak.html">Kontak</a>
                 </li>
             </ul>
         </div>
@@ -58,7 +61,7 @@
             <h1>Digital Informasi COVID-19 Tasikmalaya</h1>
             <p>Dapatkan berbagai informasi lengkap mengenai COVID-19 di Tasikmalaya secara
                 <span>Gratis.</span></p>
-            <a href="pages/about.html">
+            <a href="pages/tentang.html">
                 <button type="button" class="btn-border">Baca Selengkapnya</button>
             </a>
         </div>
@@ -88,27 +91,33 @@
 
     <!-- angka kejadian -->
     <div class="container" id="kejadian">
-        <h2>Angka Kejadina di Tasikmalaya</h2>
+        <h2>Angka Kejadian di Tasikmalaya</h2>
         <h4>Update terakhir kamis, 22 April 2020</h4>
         <div class="data-covid">
             <div class="data-p positif card bg-red">
                 <h4>Positif</h4>
-                <h3>Tasikmalaya</h3>
-                <h3>200</h3>
+                <div class="value-p">
+                    <h3>Tasikmalaya</h3>
+                    <h3 class="nilai">200</h3>
+                </div>
             </div>
             <div class="data-p sembuh card">
                 <h4>Sembuh</h4>
-                <h3>Tasikmalaya</h3>
-                <h3>200</h3>
+                <div class="value-p">
+                    <h3>Tasikmalaya</h3>
+                    <h3 class="nilai">200</h3>
+                </div>
             </div>
             <div class="data-p meninggal card">
                 <h4>Meninggal</h4>
-                <h3>Tasikmalaya</h3>
-                <h3>200</h3>
+                <div class="value-p">
+                    <h3>Tasikmalaya</h3>
+                    <h3 class="nilai">200</h3>
+                </div>
             </div>
         </div>
-        <div class="data-covid odp-pdp">
-            <div class="data odp card">
+        <div class="data-covid odp-pdp ">
+            <div class="data odp card bg-green">
                 <h4>ODP (Orang Dalam Pemantauan)</h4>
                 <div class="data-value">
                     <div class="value proses">
@@ -174,7 +183,7 @@
                 <div class="info-pencegahan card">
                     <h4>Cara Pencegahan COVID-19</h4>
                     <div class="pencegahan">
-                        <small>Menutup mulut ketika bersin</small>
+                        <small>Menutup mulut ketika batuk</small>
                         <small>Gunakan masker</small>
                         <small>Cuci tangan dengan sabun</small>
                         <small>Jangan menyentuh area wajah</small>
@@ -263,25 +272,21 @@
     <footer>
         <div class="footer-company container">
             <div class="footer-img">
-                <img src="assets/img/logo.svg" alt="Logo Dicotas">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="Logo Dicotas">
+                </a>
             </div>
             <div class="footer-dicotas">
                 <h4>DICOTAS</h4>
                 <ul>
                     <li>
-                        <a href="">Tentang Dicotas</a>
+                        <a href="pages/tentang.html">Tentang Dicotas</a>
                     </li>
                     <li>
-                        <a href="">Data</a>
+                        <a href="pages/data.html">Data</a>
                     </li>
                     <li>
-                        <a href="">Berita</a>
-                    </li>
-                    <li>
-                        <a href="">Data</a>
-                    </li>
-                    <li>
-                        <a href="">Berita</a>
+                        <a href="pages/berita.html">Berita</a>
                     </li>
                 </ul>
             </div>
@@ -289,10 +294,10 @@
                 <h4>LAYANAN</h4>
                 <ul>
                     <li>
-                        <a href="">Informasi COVID-19</a>
+                        <a href="pages/covid.html">Informasi COVID-19</a>
                     </li>
                     <li>
-                        <a href="">Tanya COVID-19</a>
+                        <a href="pages/kontak.html">Tanya COVID-19</a>
                     </li>
                     <li>
                         <a href="">Donasi</a>
@@ -313,9 +318,15 @@
             <div class="footer-contact">
                 <h4>HUBUNGI KAMI</h4>
                 <div class="sosmed">
-                    <i class="fab fa-facebook-square fb"></i>
-                    <i class="fab fa-instagram-square tw"></i>
-                    <i class="fab fa-twitter-square ig"></i>
+                    <a href="">
+                        <i class="fab fa-facebook-square fb"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram-square tw"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter-square ig"></i>
+                    </a>
                 </div>
             </div>
         </div>
