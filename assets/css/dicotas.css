@@ -134,13 +134,26 @@ nav ul li a {
 nav ul li a:hover::after {
     content: '';
     display: block;
-    box-shadow: 0 4px 0 0 #5AE295;
     background: transparent;
-    border-radius: 10px;
     height: 4px;
+    border-radius: 10px;
     width: 50%;
     margin: 0px auto -4px;
+    box-shadow: 0 4px 0 0 #5AE295;
 }
+
+.underline::after {
+    content: '';
+    display: block;
+    background: transparent;
+    height: 4px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0px auto -4px;
+    box-shadow: 0 4px 0 0 #5AE295;
+}
+
+
 
 /* hero */
 .hero1 {
@@ -379,13 +392,22 @@ iframe {
     flex: 3;
     padding: 15px;
     box-sizing: border-box;
+    color: #3C4043;
+}
+
+.berita-content h4 {
+    margin: 10px 0px;
 }
 
 .berita-img {
     flex: 1;
     height: 170px;
-    background-image: url('../img/berita1.jpg');
     background-size: cover;
+    overflow: hidden;
+}
+
+.berita-img img {
+    width: 100%;
 }
 
 
@@ -642,8 +664,48 @@ tr:hover {
     background-color: #ddd;
 }
 
-/* berita */
+/* beranda berita */
+#beranda-berita {
+    margin-top: 8%;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
 
+.berita-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.berita-item {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px dashed #ccc;
+    overflow: hidden;
+}
+
+
+.berita-image img {
+    width: 100%;
+}
+
+.beriita-info {
+    height: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* galeri foto */
+#galeri-foto {
+    margin-top: 8%;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
 
 
 /* galeri vidio */
@@ -653,14 +715,38 @@ tr:hover {
     margin-bottom: 100px;
 }
 
+.foto-items {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.foto-item {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.foto-item img {
+    width: 100%;
+    border-radius: 10px;
+    filter: grayscale(.8);
+}
+
+.foto-item img:hover {
+    filter: grayscale(0);
+    transition: .5s ease-in-out;
+}
+
 .link {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 20px;
 }
 
-.link button.bg-green.btn-small {
-    margin-right: 10px;
+.link button.btn-video {
+    margin-left: 10px;
 }
 
 .serch {
@@ -743,6 +829,70 @@ tr:hover {
     padding: 15px;
     box-sizing: border-box;
 }
+
+/* kontak */
+#kontak {
+    margin-top: 8%;
+    margin-bottom: 100px;
+}
+
+.kontak-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+
+.form {
+    margin: auto;
+    width: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form form input,
+.form form textarea {
+    display: block;
+    padding: 15px 30px;
+    margin: 10px 0px;
+    width: 80%;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #3C4043;
+}
+
+.form form input {
+    border-radius: 100px;
+}
+
+.form form textarea {
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+
+.form form input:focus {
+    box-shadow: 1px 1px 5px #5AE295, -1px -1px 5px #5AE295;
+    border: 1px solid #5AE295;
+}
+
+.form form textarea:focus {
+    box-shadow: 1px 1px 5px #5AE295, -1px -1px 5px #5AE295;
+    border: 1px solid #5AE295;
+}
+
+
+
+
 
 
 /* Responsive Breakpoint */
